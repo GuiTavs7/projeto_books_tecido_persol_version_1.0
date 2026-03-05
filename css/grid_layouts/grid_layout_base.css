@@ -1,0 +1,167 @@
+/* Container geral */
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-header{
+  margin-bottom: 40px;
+  margin-left: 25%;
+  align-self: start;
+}
+
+.layout-header .book-label{
+  font-size: 22px;
+}
+
+/* ===============================
+   GRID BASE
+================================ */
+
+.grid{
+  width: 50%;
+  display: grid;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+/* ===============================
+   COLUNAS
+================================ */
+
+.grid-left{
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: flex;
+}
+
+.grid-left > .card{
+  flex: 1;
+}
+
+.grid-right{
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: grid;
+  gap: 24px;
+}
+
+/* ===============================
+   CARD
+================================ */
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  transition:
+    transform .45s cubic-bezier(.22,.61,.36,1),
+    box-shadow .45s cubic-bezier(.22,.61,.36,1);
+}
+
+.card:hover img{
+  transform: translateY(-12px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.card--ratio img{
+  aspect-ratio: 4/3;
+}
+
+/* ===============================
+   TEXTO
+================================ */
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-paragraph);
+  font-size: 18px;
+  letter-spacing: .12em;
+}
+
+.card-name{
+  font-weight: 500;
+}
+
+.card-code{
+  opacity: .7;
+}
+
+@media (max-width: 768px){
+
+  /* Layout geral */
+  .layout{
+    justify-content: flex-start;
+    padding: 12px 16px;
+  }
+
+  .layout-header{
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+
+  /* Grid vira coluna única */
+  .grid{
+    width: 100%;
+    gap: 32px;
+    margin-bottom: 10px;
+  }
+
+  /* Cards mais espaçados */
+  .card{
+    gap: 8px;
+  }
+
+  /* Imagens mais "hero" */
+  .card img{
+    border-radius: 12px;
+  }
+
+  /* Texto mais legível */
+  .card-info{
+    font-size: 16px;
+    letter-spacing: .08em;
+  }
+
+  /* Remove hover no mobile */
+  .card:hover img{
+    transform: none;
+  }
+}
+
+@media (max-width: 480px){
+
+  .layout-header .h1{
+    font-size: 22px;
+  }
+
+  .layout-header .book-label{
+    font-size: 18px;
+  }
+
+  .card-info{
+    align-items: flex-start;
+  }
+
+  .card-name{
+    font-size: 12px;
+  }
+
+  .card-code{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "./variables/variaveis.css";
+@import "./variables/media-inset.css";         
+
+/* ===== Base ===== */
+*{ 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #eef1f5;
+  color:#0b0e12;
+  font-family: var(--font-paragraph);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-title);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+body #carrossel{
+   background: linear-gradient(
+    to bottom,
+    #ffffff 50%,
+    #2f6f5f 50%
+  );
+   margin-bottom: 100px;
+}

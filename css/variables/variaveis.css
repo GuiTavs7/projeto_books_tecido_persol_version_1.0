@@ -1,0 +1,22 @@
+/* =========================
+   VARIÁVEIS (edite aqui fácil)
+   ========================= */
+:root{
+  --page-max: 1180px;
+  --page-pad: 20px;
+  --gap: 18px;
+
+  --font-paragraph: "Montserrat";
+  --font-title: "roc-grotesk";
+  --title: clamp(34px, 4.5vw, 52px);
+  --small: 12px;
+
+  --radius: 18px;
+  --radius-sm: 14px;
+
+  --shadow-inset: inset 0 18px 34px rgba(0,0,0,.18);
+  --shadow-inset-strong: inset 0 26px 46px rgba(0,0,0,.22);
+
+  --h-hero-mobile: 32svh;
+  --h-list-mobile: 40svh;
+}
