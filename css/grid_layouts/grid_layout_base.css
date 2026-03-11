@@ -2,18 +2,22 @@
 .layout{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .layout-header{
-  margin-bottom: 40px;
-  margin-left: 25%;
+  margin-bottom: 10px;
   align-self: start;
 }
 
+.layout-header h1{
+  font-size: 26px;
+}
+
 .layout-header .book-label{
-  font-size: 22px;
+  font-size: 18px;
+  margin-top: -8px;
 }
 
 /* ===============================
@@ -21,9 +25,9 @@
 ================================ */
 
 .grid{
-  width: 50%;
+  width: 50vw;
   display: grid;
-  gap: 80px;
+  gap: 20px 40px;
   margin-bottom: 50px;
 }
 
@@ -37,12 +41,8 @@
   display: flex;
 }
 
-.grid-left > .card{
-  flex: 1;
-}
-
 .grid-right{
-  grid-column: 2 / 3;
+  grid-column: 2 / 2;
   grid-row: 1 / -1;
   display: grid;
   gap: 24px;
@@ -77,10 +77,6 @@
   cursor: pointer;
 }
 
-.card--ratio img{
-  aspect-ratio: 4/3;
-}
-
 /* ===============================
    TEXTO
 ================================ */
@@ -89,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-paragraph);
-  font-size: 18px;
+  font-size: 12px;
   letter-spacing: .12em;
 }
 
@@ -123,7 +119,7 @@
 
   /* Cards mais espaçados */
   .card{
-    gap: 8px;
+    gap: 4px;
   }
 
   /* Imagens mais "hero" */
@@ -158,10 +154,10 @@
   }
 
   .card-name{
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .card-code{
-    font-size: 12px;
+    font-size: 10px;
   }
 }

@@ -8,45 +8,61 @@
 
     <title>Book • Decorados</title>
 
-    <!--IMPORTAÇÃO GLOBAL DE ESTILOS-->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/grid_layouts/grid_reset_header_container.css">
+    <link rel="icon" href="./img/png/logo_svg.png" type="image/png" sizes="32x32">
 
     <!--IMPORTAÇÃO DAS FONTES - MONTSERRAT & ROC-GROTESK-->
     <link rel="stylesheet" href="https://use.typekit.net/eod6gis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!--IMPORTAÇÃO GLOBAL DE ESTILOS-->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
 
-    <div data-include="./pages/capas/capa-book.html"></div>
+    <div data-include="./pages/structure/header-menu.html"></div>
 
-    <div data-include="./pages/structure/sumario.html"></div>
+    <div class="section" data-include="./pages/capas/capa-book.html"></div>
 
-    <div data-include="./pages/capas/capa-colecao.html"></div>
+    <div class="section" data-include="./pages/structure/sumario.html"></div>
 
-    <div id="tunis" data-include="./pages/collections/colecao-tunis.html"></div>
+    <div id="tunis" class="section" data-include="./pages/capas/capa-modelo-colecao.html"></div>
 
-    <!--INSIRA MAIS CAPAS DE COLEÇÕES ANTES DE CADA ITEM AQUI-->
-
-    <div id="wood-look-single" data-include="./pages/collections/colecao-wood-look-single.html"></div> 
+    <div class="section" data-include="./pages/collections/tunis.html"></div>
 
     <!--INSIRA MAIS CAPAS DE COLEÇÕES ANTES DE CADA ITEM AQUI-->
 
-    <div id="napoles" data-include="./pages/collections/napoles.html"></div> 
+    <div id="wood-look-single" class="section" data-include="./pages/capas/capas_collections/capa-colecao-wood-look.html"></div>
+
+    <div class="section" data-include="./pages/collections/wood-look-single.html"></div> 
+
+    <!--INSIRA MAIS CAPAS DE COLEÇÕES ANTES DE CADA ITEM AQUI-->
+
+    <div id="napoles" class="section" data-include="./pages/capas/capas_collections/capa-colecao-napoles.html"></div>
+
+    <div class="section" data-include="./pages/collections/napoles.html"></div> 
 
     <!--INSIRA MAIS COLEÇÕES AQUI-->
 
-    <div data-include="./pages/structure/video-section.html"></div>
+    <div id="alberta2" class="section" data-include="./pages/capas/capas_collections/capa-colecao-alberta2.html"></div>
 
-    <div data-include="./pages/structure/carrossel.html" id="carrossel"></div>
+    <div class="section" data-include="./pages/collections/alberta2-single.html"></div> 
 
-    <div data-include="./pages/capas/contracapa-footer.html"></div>
+    <div class="section" data-include="./pages/structure/video-section.html"></div>
 
+    <div class="section" data-include="./pages/structure/carrossel.html" id="carrossel"></div>
+
+    <div class="section" data-include="./pages/structure/carrossel-certificacoes.html"></div>
+
+    <div class="section" data-include="./pages/structure/rodape-footer.html"></div>
+
+    <script src="./js/includes.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/carrossel_certificacoes.js"></script>
+    
   </body>
 
-  <script src="./js/includes.js"></script>
-  
 </html>

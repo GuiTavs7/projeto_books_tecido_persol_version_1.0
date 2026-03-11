@@ -16,4 +16,9 @@ async function includeHTML() {
   }
 }
 
+// Dispara evento do menu quando todos includes são carregados
+setTimeout(()=>{
+  document.dispatchEvent(new Event("includesLoaded"));
+},1000);
+
 includeHTML();

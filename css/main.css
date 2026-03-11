@@ -1,7 +1,8 @@
 @import "./variables/variaveis.css";
 @import "./variables/media-inset.css";         
 
-/* ===== Base ===== */
+/* ===== BASE ===== */
+
 *{ 
   box-sizing: border-box; 
   margin: 0;
@@ -12,6 +13,7 @@ body{
   background: #eef1f5;
   color:#0b0e12;
   font-family: var(--font-paragraph);
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,6 +25,21 @@ a{
   text-decoration: none;
 }
 
+/* ===== ANIMAÇÃO DE TRANSIÇÃO ENTRE PÁGINAS ===== */
+
+.section{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .8s ease;
+}
+
+.section.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FUNDO CARROSSEL ===== */
+
 body #carrossel{
    background: linear-gradient(
     to bottom,
@@ -30,4 +47,25 @@ body #carrossel{
     #2f6f5f 50%
   );
    margin-bottom: 100px;
+}
+
+/* ===== BARRA DE ROLAGEM ===== */
+
+::-webkit-scrollbar {
+  width: 6px; /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #e6e6e6; /* fundo da barra */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f7d66; /* verde da barra */
+  border-radius: 10px;
+  border: 1px solid #e6e6e6; /* cria espaçamento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #256a57; /* verde um pouco mais escuro ao passar o mouse */
 }

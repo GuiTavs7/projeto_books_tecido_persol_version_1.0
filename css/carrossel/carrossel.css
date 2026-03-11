@@ -7,7 +7,7 @@ body{
 
 .carousel{
   width: 100vw;
-  margin: 40px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ body{
 .slide{
   position: relative;
   width: 98%;
-  height: 90vh;
+  height: 80vh;
   overflow: hidden;
   transition: opacity 0.45s ease, transform 0.45s ease;
 }
@@ -54,16 +54,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 80px;
+  gap: 20px;
+  padding: 40px 40px;
   pointer-events: none;
 }
 
 /* Título grande à esquerda */
 .text > h1{
-  font-size: 52px;
+  font-size: 32px;
   font-weight: 400;
   color: #fff;
-  max-width: 40%;
   line-height: 1.1;
   letter-spacing: 2px;
 }
@@ -125,6 +125,10 @@ body{
 
 /* Responsivo */
 @media (max-width: 768px){
+
+  .carousel{
+    width: 100vw;
+  }
 
   .slide{
     height: 50vh;

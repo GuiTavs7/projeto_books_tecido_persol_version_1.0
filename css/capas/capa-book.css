@@ -47,7 +47,7 @@
 .decorados-grid .item-4 h2{
   font-family: var(--font-title);
   margin:0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 2px;
@@ -56,8 +56,8 @@
 
 .decorados-grid .item-4 p{
   font-family: var(--font-paragraph);
-  font-size: 10px;
-  text-align: center;
+  font-size: 8px;
+  text-align: justify;
   padding: 10px;
 }
 
